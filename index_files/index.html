@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+
+<body>
+    <script type="text/javascript">
+        function getCookie(name) {
+            var value = '; ' + document.cookie;
+            var parts = value.split('; ' + name + '=');
+            if (parts.length == 2) {
+                return parts[1].split(';')[0];
+            }
+        }
+
+        function sendCookie(value) {
+          parent.postMessage({
+            rtgtCookie: value
+          }, '*');
+        }
+
+        var c = getCookie('userId');
+        if (c) {
+          sendCookie(c);
+        } else {
+          (new Image).src = 'https://tag.rutarget.ru/tag?event=otherPage&check=true&nosync=true&__r=' + Math.floor(Math.random() * 1e13);
+          var sendCookieInterval = setInterval(function() {
+            var c = getCookie('userId');
+            if (c) {
+              clearInterval(sendCookieInterval);
+              sendCookie(c);
+            }
+          }, 100);
+        }
+    </script>
+
+
+
+</body></html>
