@@ -1,0 +1,1 @@
+_satellite.pushAsyncScript(function(t,a,n){tracking.addPixel("https://dp.datamind.ru/want/take/agent-t"),tracking.addPixel("https://dp.tinkoff.ru/want/take/agent-t2"),tracking.addPixel("https://dp.datamind.ru/want/take/agent-a")});

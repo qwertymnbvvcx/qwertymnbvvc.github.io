@@ -1,0 +1,1 @@
+_satellite.pushAsyncScript(function(t,e,a){var r=Math.floor(1e12*Math.random()+1),d=document.createElement("script");d.src="https://ad.doubleclick.net/ddm/adj/N1068338.197812NSO.CODESRV/B224590338.281656263;sz=1x2;ord="+r+"?",d.language="JavaScript1.1";var c=document.body.firstChild;c.parentNode.insertBefore(d,c)});
